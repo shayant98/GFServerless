@@ -11,7 +11,7 @@ fetchUsers().then(data => {
   );
   users = data.items;
   console.log(data);
-  index = 0;
+  index = 1;
 
   users.forEach(user => {
     const li = document.createElement("li");

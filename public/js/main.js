@@ -11,9 +11,11 @@ fetchUsers().then(data => {
   );
   users = data.items;
   console.log(data);
+  index = 0;
 
   users.forEach(user => {
     const li = document.createElement("li");
+
     const image = document.createElement("img");
     image.className = "img-fluid rounded-circle mr-4";
     image.style.width = "10%";
@@ -24,6 +26,7 @@ fetchUsers().then(data => {
     link.appendChild(document.createTextNode(user.login));
     link.href = user.html_url;
     link.target = "_blank";
+    li.appendChild(document.createTextNode(index++));
     li.appendChild(image);
     li.appendChild(link);
     userList.appendChild(li);

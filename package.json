@@ -1,0 +1,17 @@
+{
+  "name": "GFserverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lambda-serve": "netlify-lambda serve serverless",
+    "lambda-build": "netlify-lambda build serverless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "netlify-lambda": "^1.1.0"
+  }
+}

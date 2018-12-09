@@ -10,6 +10,7 @@ fetchUsers().then(data => {
     document.createTextNode(`Total SU Github Users: ${data.total_count} 🇸🇷`)
   );
   users = data.items;
+  console.log(users);
 
   users.forEach(user => {
     const li = document.createElement("li");

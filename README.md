@@ -1,6 +1,7 @@
 # GFServerless
 Serverless Webapp build using LAMBDA functions.
-this project is a serverless implemantation of 'GithubFinder' with some enhancements
+this project is a serverless implemantation of [GithubFinder](https://github.com/shayant98/GithubFinder) with some enhancements 
+
 ## Dependencies
 * Boostrap CDN
 * Axios HTTP

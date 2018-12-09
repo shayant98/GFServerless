@@ -6,7 +6,7 @@ searchUser.addEventListener("keyup", e => {
 
   if (userText != "") {
     const fetchUser = async () =>
-      await (await fetch("/./netlify/functions/getuser", {
+      await (await fetch("/.netlify/functions/getUser", {
         method: "POST",
         body: JSON.stringify({ user: userText })
       })).json();
